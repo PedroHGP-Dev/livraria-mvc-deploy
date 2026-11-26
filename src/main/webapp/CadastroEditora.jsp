@@ -27,7 +27,7 @@
                     <input type="text" class="form-control" required name="cnpjEditora" value="${cnpjEditora}"/>
                 </div>
                 <div class="col-md-6">
-                    <label class="form-label">Endere�o:</label>
+                    <label class="form-label">Endereço:</label>
                     <input type="text" class="form-control" required name="enderecoEditora" value="${enderecoEditora}"/>
                 </div>
                 <div class="col-md-6">
@@ -41,7 +41,7 @@
 
                 <div class="col-12">
                     <button type="submit" class="btn btn-primary">
-                        ${opcao == 'confirmarExcluir' ? 'Confirmar Exclus�o' : 'Salvar'}
+                        ${opcao == 'confirmarExcluir' ? 'Confirmar Exclusão' : 'Salvar'}
                     </button>
                     <a href="${pageContext.request.contextPath}${URL_BASE}/EditoraControlador?opcao=cancelar" class="btn btn-secondary">Cancelar</a>
                 </div>
@@ -60,7 +60,7 @@
                             <th style="width: 8%">ID</th>
                             <th>NOME</th>
                             <th>CNPJ</th>
-                            <th>ENDERE�O</th>
+                            <th>ENDEREÇO</th>
                             <th>TELEFONE</th>
                             <th>EMAIL</th>
                             <th style="width: 10%">ALTERAR</th>

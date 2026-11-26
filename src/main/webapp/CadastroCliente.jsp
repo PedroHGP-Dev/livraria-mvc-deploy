@@ -27,7 +27,7 @@
                     <input type="text" class="form-control" required name="cpfCliente" value="${cpfCliente}"/>
                 </div>
                 <div class="col-md-6">
-                    <label class="form-label">Endere�o:</label>
+                    <label class="form-label">Endereço:</label>
                     <input type="text" class="form-control" required name="enderecoCliente" value="${enderecoCliente}"/>
                 </div>
                 <div class="col-md-6">
@@ -63,7 +63,7 @@
                     <c:choose>
                         <c:when test="${opcao == 'confirmarExcluir'}">
                             <a href="${pageContext.request.contextPath}${URL_BASE}/ClienteControlador?opcao=confirmarExcluir&codigoCliente=${codigoCliente}" class="btn btn-primary">
-                                Confirmar Exclus�o
+                                Confirmar Exclusão
                             </a>
                         </c:when>
                         <c:otherwise>
@@ -85,7 +85,7 @@
                             <th style="width: 8%">ID</th>
                             <th>NOME</th>
                             <th>CPF</th>
-                            <th>ENDERE�O</th>
+                            <th>ENDEREÇO</th>
                             <th>BAIRRO</th>
                             <th>CEP</th>
                             <th>CIDADE</th>

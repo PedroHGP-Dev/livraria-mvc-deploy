@@ -23,7 +23,7 @@
                     <input type="text" class="form-control" required name="nomeLivraria" value="${nomeLivraria}"/>
                 </div>
                 <div class="col-md-6">
-                    <label class="form-label">Endere�o:</label>
+                    <label class="form-label">Endereço:</label>
                     <input type="text" class="form-control" required name="enderecoLivraria" value="${enderecoLivraria}"/>
                 </div>
 
@@ -47,7 +47,7 @@
                 <div class="col-12">
                     <c:choose>
                         <c:when test="${opcao == 'confirmarExcluir'}">
-                            <button type="submit" formnovalidate class="btn btn-danger">Confirmar Exclus�o</button>
+                            <button type="submit" formnovalidate class="btn btn-danger">Confirmar Exclusão</button>
                         </c:when>
                         <c:otherwise>
                             <button type="submit" class="btn btn-primary">Salvar</button>
@@ -69,7 +69,7 @@
                         <tr>
                             <th style="width: 5%">ID</th>
                             <th>NOME</th>
-                            <th>ENDERE�O</th>
+                            <th>ENDEREÇO</th>
                             <th>CIDADE</th>
                             <th style="width: 6%">UF</th>
                             <th>EMAIL</th>

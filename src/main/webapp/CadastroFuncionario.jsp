@@ -4,7 +4,7 @@
 <html data-bs-theme="dark">
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Cadastro de Funcion�rios</title>
+        <title>Cadastro de Funcionários</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
         <link href="${pageContext.request.contextPath}/css/bootstrap_config.css" rel="stylesheet">
     </head>
@@ -12,7 +12,7 @@
         <%@include file="Menu.jsp" %>
         
         <div class="container mt-4">
-            <h1 class="mb-4">Cadastro Funcion�rio</h1>
+            <h1 class="mb-4">Cadastro Funcionário</h1>
 
             <form method="get" action="${pageContext.request.contextPath}${URL_BASE}/FuncionarioControlador" class="row g-3 mb-4">
                 <input type="hidden" name="opcao" value="${opcao}">
@@ -28,17 +28,17 @@
                 </div>
                 
                 <div class="col-md-6">
-                    <label class="form-label">Sal�rio:</label>
+                    <label class="form-label">Salário:</label>
                     <input type="number" step="0.01" min="0" class="form-control" required name="salarioFuncionario" value="${salarioFuncionario}"/>
                 </div>
                 
                 <div class="col-md-6">
-                    <label class="form-label">Comiss�o:</label>
+                    <label class="form-label">Comissão:</label>
                     <input type="number" step="0.01" min="0" class="form-control" required name="comissaoPorLivroFuncionario" value="${comissaoPorLivroFuncionario}"/>
                 </div>
                 
                 <div class="col-md-6">
-                    <label class="form-label">Endere�o:</label>
+                    <label class="form-label">Endereço:</label>
                     <input type="text" class="form-control" required name="enderecoFuncionario" value="${enderecoFuncionario}"/>
                 </div>
                 <div class="col-md-6">
@@ -70,7 +70,7 @@
                     <c:choose>
                         <c:when test="${opcao == 'confirmarExcluir'}">
                             <button type="submit" formnovalidate class="btn btn-danger">
-                                Confirmar Exclus�o
+                                Confirmar Exclusão
                             </button>
                         </c:when>
                         <c:otherwise>
@@ -92,9 +92,9 @@
                             <th style="width: 8%">ID</th>
                             <th>NOME</th>
                             <th>CPF</th>
-                            <th>SAL�RIO</th>
-                            <th>COMISS�O</th>
-                            <th>ENDERE�O</th>
+                            <th>SALÁRIO</th>
+                            <th>COMISSÃO</th>
+                            <th>ENDEREÇO</th>
                             <th>EMAIL</th>
                             <th>TELEFONE</th>
                             <th>CARTEIRA</th>
