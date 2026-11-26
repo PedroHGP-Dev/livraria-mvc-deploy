@@ -1,0 +1,48 @@
+package com.mycompany.livrariapedrojoaquim.relatorios;
+
+import com.mycompany.livrariapedrojoaquim.modelo.entidade.FormaPagamento;
+import jakarta.servlet.ServletOutputStream;
+import jakarta.servlet.http.HttpServletResponse;
+import org.apache.poi.ss.usermodel.*;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+
+import java.io.IOException;
+import java.util.List;
+
+public class RelatorioFormaPagamentoExcel {
+
+    private List<FormaPagamento> formas;
+
+    public RelatorioFormaPagamentoExcel(List<FormaPagamento> formas) {
+        this.formas = formas;
+    }
+
+    public void gerarRelatorio(HttpServletResponse response) throws IOException {
+        Workbook workbook = new XSSFWorkbook();
+        Sheet sheet = workbook.createSheet("Formas de Pagamento");
+
+        Row headerRow = sheet.createRow(0);
+        headerRow.createCell(0).setCellValue("Código");
+        headerRow.createCell(1).setCellValue("Descrição");
+
+        int rowCount = 1;
+        for (FormaPagamento fp : formas) {
+            Row row = sheet.createRow(rowCount++);
+            row.createCell(0).setCellValue(fp.getCodFormaPagamento());
+            row.createCell(1).setCellValue(fp.getNomeFormaPagamento());
+        }
+
+        for (int i = 0; i < 2; i++) {
+            sheet.autoSizeColumn(i);
+        }
+
+        response.setContentType("application/vnd.openxmlformats-officedocument.spreadsheetml.sheet");
+        response.setHeader("Content-Disposition", "attachment; filename=relatorio_formas_pagamento.xlsx");
+
+        try (ServletOutputStream outputStream = response.getOutputStream()) {
+            workbook.write(outputStream);
+        }
+
+        workbook.close();
+    }
+}
