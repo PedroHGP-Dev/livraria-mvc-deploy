@@ -1,10 +1,10 @@
-﻿<%@ taglib prefix="c" uri="jakarta.tags.core" %>
+<%@ taglib prefix="c" uri="jakarta.tags.core" %>
 <%@ taglib prefix="fmt" uri="jakarta.tags.fmt" %>
-<%@ page contentType="text/html" pageEncoding="Latin1"%>
+<%@ page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html data-bs-theme="dark">
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=Latin1">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Fluxo de Caixa</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
         <link href="${pageContext.request.contextPath}/css/bootstrap_config.css" rel="stylesheet">
