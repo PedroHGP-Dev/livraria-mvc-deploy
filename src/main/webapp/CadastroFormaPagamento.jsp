@@ -25,7 +25,7 @@
 
                 <div class="col-12">
                     <button type="submit" class="btn btn-primary" name="Salvar">
-                        ${opcao == 'confirmarExcluir' ? 'Confirmar Exclusão' : 'Salvar'}
+                        ${opcao == 'confirmarExcluir' ? 'Confirmar Exclus�o' : 'Salvar'}
                     </button>
                     <a href="${pageContext.request.contextPath}${URL_BASE}/FormaPagamentoControlador?opcao=cancelar" class="btn btn-secondary">Cancelar</a>
                 </div>
@@ -41,7 +41,7 @@
                 <table class="table table-striped table-hover table-bordered mt-3">
                     <thead class="table-dark">
                         <tr>
-                            <th style="width: 10%;">CÓDIGO</th>
+                            <th style="width: 10%;">C�DIGO</th>
                             <th>NOME</th>
                             <th style="width: 15%;">ALTERAR</th>
                             <th style="width: 15%;">EXCLUIR</th>

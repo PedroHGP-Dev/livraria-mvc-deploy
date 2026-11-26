@@ -4,7 +4,7 @@
 <html data-bs-theme="dark">
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Cadastro de Gêneros</title>
+        <title>Cadastro de G�neros</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
         <link href="${pageContext.request.contextPath}/css/bootstrap_config.css" rel="stylesheet">
     </head>
@@ -12,20 +12,20 @@
         <%@include file="Menu.jsp" %>
 
         <div class="container mt-4">
-            <h1 class="mb-4">Cadastro Gênero Literário</h1>
+            <h1 class="mb-4">Cadastro G�nero Liter�rio</h1>
 
             <form id="cadastroForm" method="get" action="${pageContext.request.contextPath}${URL_BASE}/GeneroLivroControlador" class="row g-3 mb-4">
                 <input type="hidden" name="opcao" value="${opcao}">
                 <input type="hidden" name="codGeneroLivro" value="${codGeneroLivro}">
 
                 <div class="col-md-6">
-                    <label class="form-label">Gênero:</label>
+                    <label class="form-label">G�nero:</label>
                     <input type="text" class="form-control" required name="nomeGeneroLivro" value="${nomeGeneroLivro}"/>
                 </div>
 
                 <div class="col-12">
                     <button type="submit" class="btn btn-primary" name="Salvar">
-                        ${opcao == 'confirmarExcluir' ? 'Confirmar Exclusão' : 'Salvar'}
+                        ${opcao == 'confirmarExcluir' ? 'Confirmar Exclus�o' : 'Salvar'}
                     </button>
                     <a href="${pageContext.request.contextPath}${URL_BASE}/GeneroLivroControlador?opcao=cancelar" class="btn btn-secondary">Cancelar</a>
                 </div>
@@ -41,7 +41,7 @@
                 <table class="table table-striped table-hover table-bordered mt-3">
                     <thead class="table-dark">
                         <tr>
-                            <th style="width: 10%;">CÓDIGO</th>
+                            <th style="width: 10%;">C�DIGO</th>
                             <th>NOME</th>
                             <th style="width: 15%;">ALTERAR</th>
                             <th style="width: 15%;">EXCLUIR</th>

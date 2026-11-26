@@ -35,7 +35,7 @@
                     </div>
 
                     <div class="col-12 mt-4">
-                        <button type="submit" class="btn btn-warning text-dark w-100 font-weight-bold">Gerar Link de Recuperação</button>
+                        <button type="submit" class="btn btn-warning text-dark w-100 font-weight-bold">Gerar Link de Recupera��o</button>
                     </div>
                 </form>
 
