@@ -1,4 +1,4 @@
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+ï»¿<%@ taglib prefix="c" uri="jakarta.tags.core" %>
 <%@ page contentType="text/html" pageEncoding="Latin1"%>
 <!DOCTYPE html>
 <html data-bs-theme="dark">
@@ -19,7 +19,7 @@
                 <input type="hidden" name="codigoLivro" value="${codigoLivro}">
 
                 <div class="col-md-6">
-                    <label class="form-label">Título:</label>
+                    <label class="form-label">Tï¿½tulo:</label>
                     <input type="text" class="form-control" required name="tituloLivro" value="${tituloLivro}"/>
                 </div>
                 <div class="col-md-6">
@@ -28,7 +28,7 @@
                 </div>
                 
                 <div class="col-md-6">
-                    <label class="form-label">Preço:</label>
+                    <label class="form-label">Preï¿½o:</label>
                     <input type="number" step="0.01" min="0" class="form-control" required name="precoLivro" value="${precoLivro}"/>
                 </div>
                 
@@ -38,7 +38,7 @@
                 </div>
                 
                 <div class="col-md-4">
-                    <label class="form-label">Gênero:</label>
+                    <label class="form-label">Gï¿½nero:</label>
                     <select class="form-select" name="generoLivro">
                         <c:forEach var="generos" items="${listaGenero}">
                             <option value="${generos.codGeneroLivro}" ${generos.codGeneroLivro == generoLivro ? 'selected' : ''}>${generos.nomeGeneroLivro}</option>
@@ -66,7 +66,7 @@
                     <c:choose>
                         <c:when test="${opcao == 'confirmarExcluir'}">
                             <button type="submit" formnovalidate class="btn btn-danger">
-                                Confirmar Exclusão
+                                Confirmar Exclusï¿½o
                             </button>
                         </c:when>
                         <c:otherwise>
@@ -86,11 +86,11 @@
                     <thead class="table-dark">
                         <tr>
                             <th style="width: 8%">ID</th>
-                            <th>TÍTULO</th>
+                            <th>Tï¿½TULO</th>
                             <th>AUTOR</th>
-                            <th>PREÇO</th>
+                            <th>PREï¿½O</th>
                             <th>ESTOQUE</th>
-                            <th>GÊNERO</th>
+                            <th>Gï¿½NERO</th>
                             <th>EDITORA</th>
                             <th>LIVRARIA</th>
                             <th style="width: 10%">ALTERAR</th>

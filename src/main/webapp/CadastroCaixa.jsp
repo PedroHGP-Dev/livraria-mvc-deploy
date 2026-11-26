@@ -1,5 +1,5 @@
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+ï»¿<%@ taglib prefix="c" uri="jakarta.tags.core" %>
+<%@ taglib prefix="fmt" uri="jakarta.tags.fmt" %>
 <%@ page contentType="text/html" pageEncoding="Latin1"%>
 <!DOCTYPE html>
 <html data-bs-theme="dark">
@@ -34,7 +34,7 @@
                     </div>
                     
                     <div class="col-md-3">
-                        <label class="form-label">Funcionário:</label>
+                        <label class="form-label">Funcionï¿½rio:</label>
                         <select class="form-select" name="funcionario_codFuncionario" ${vendaIniciada ? 'disabled' : ''} required>
                             <option value="" disabled ${empty funcionario_codFuncionario ? 'selected' : ''}>Selecione...</option>
                             <c:forEach var="f" items="${listaFuncionario}">
@@ -109,7 +109,7 @@
                             <label class="form-label">Valor R$:</label>
                             <input type="number" class="form-control" name="valorPagamento" value="0.00" step="0.01" ${!vendaIniciada ? 'disabled' : ''}>
                         </div>
-                        <button type="submit" name="opcao" value="addPagamento" class="btn btn-info text-dark font-weight-bold" ${!vendaIniciada ? 'disabled' : ''}>Lançar Pagamento</button>
+                        <button type="submit" name="opcao" value="addPagamento" class="btn btn-info text-dark font-weight-bold" ${!vendaIniciada ? 'disabled' : ''}>Lanï¿½ar Pagamento</button>
                     </div>
                 </div>
 
@@ -121,7 +121,7 @@
                                 <tr>
                                     <th>Livro</th>
                                     <th style="width: 15%">Qtd</th>
-                                    <th>Preço</th>
+                                    <th>Preï¿½o</th>
                                     <th style="width: 15%">Remover</th>
                                 </tr>
                             </thead>
@@ -144,7 +144,7 @@
                 </div>
 
                 <div class="col-md-6 mt-4">
-                    <h3 class="h5 mb-3">Pagamentos Lançados</h3>
+                    <h3 class="h5 mb-3">Pagamentos Lanï¿½ados</h3>
                     <div class="table-responsive">
                         <table class="table table-striped table-hover table-bordered">
                             <thead class="table-dark">

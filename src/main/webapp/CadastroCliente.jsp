@@ -1,4 +1,4 @@
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+ï»¿<%@ taglib prefix="c" uri="jakarta.tags.core" %>
 <%@ page contentType="text/html" pageEncoding="Latin1"%>
 <!DOCTYPE html>
 <html data-bs-theme="dark">
@@ -27,7 +27,7 @@
                     <input type="text" class="form-control" required name="cpfCliente" value="${cpfCliente}"/>
                 </div>
                 <div class="col-md-6">
-                    <label class="form-label">Endereço:</label>
+                    <label class="form-label">Endereï¿½o:</label>
                     <input type="text" class="form-control" required name="enderecoCliente" value="${enderecoCliente}"/>
                 </div>
                 <div class="col-md-6">
@@ -63,7 +63,7 @@
                     <c:choose>
                         <c:when test="${opcao == 'confirmarExcluir'}">
                             <a href="${pageContext.request.contextPath}${URL_BASE}/ClienteControlador?opcao=confirmarExcluir&codigoCliente=${codigoCliente}" class="btn btn-primary">
-                                Confirmar Exclusão
+                                Confirmar Exclusï¿½o
                             </a>
                         </c:when>
                         <c:otherwise>
@@ -85,7 +85,7 @@
                             <th style="width: 8%">ID</th>
                             <th>NOME</th>
                             <th>CPF</th>
-                            <th>ENDEREÇO</th>
+                            <th>ENDEREï¿½O</th>
                             <th>BAIRRO</th>
                             <th>CEP</th>
                             <th>CIDADE</th>

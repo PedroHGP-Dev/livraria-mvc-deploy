@@ -1,10 +1,10 @@
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+ï»¿<%@ taglib prefix="c" uri="jakarta.tags.core" %>
 <%@ page contentType="text/html" pageEncoding="Latin1"%>
 <!DOCTYPE html>
 <html data-bs-theme="dark">
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=Latin1">
-        <title>Login de Usuário</title>
+        <title>Login de Usuï¿½rio</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
         <link href="${pageContext.request.contextPath}/css/bootstrap_config.css" rel="stylesheet">
     </head>
@@ -29,7 +29,7 @@
                     <input type="hidden" name="opcao" value="logar">
 
                     <div class="col-12">
-                        <label class="form-label">Usuário:</label>
+                        <label class="form-label">Usuï¿½rio:</label>
                         <input type="text" class="form-control" required name="nomeusuario" autofocus/>
                     </div>
 

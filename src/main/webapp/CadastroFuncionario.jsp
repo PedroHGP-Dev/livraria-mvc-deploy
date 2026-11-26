@@ -1,10 +1,10 @@
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+ï»¿<%@ taglib prefix="c" uri="jakarta.tags.core" %>
 <%@ page contentType="text/html" pageEncoding="Latin1"%>
 <!DOCTYPE html>
 <html data-bs-theme="dark">
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=Latin1">
-        <title>Cadastro de Funcionários</title>
+        <title>Cadastro de Funcionï¿½rios</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
         <link href="${pageContext.request.contextPath}/css/bootstrap_config.css" rel="stylesheet">
     </head>
@@ -12,7 +12,7 @@
         <%@include file="Menu.jsp" %>
         
         <div class="container mt-4">
-            <h1 class="mb-4">Cadastro Funcionário</h1>
+            <h1 class="mb-4">Cadastro Funcionï¿½rio</h1>
 
             <form method="get" action="${pageContext.request.contextPath}${URL_BASE}/FuncionarioControlador" class="row g-3 mb-4">
                 <input type="hidden" name="opcao" value="${opcao}">
@@ -28,17 +28,17 @@
                 </div>
                 
                 <div class="col-md-6">
-                    <label class="form-label">Salário:</label>
+                    <label class="form-label">Salï¿½rio:</label>
                     <input type="number" step="0.01" min="0" class="form-control" required name="salarioFuncionario" value="${salarioFuncionario}"/>
                 </div>
                 
                 <div class="col-md-6">
-                    <label class="form-label">Comissão:</label>
+                    <label class="form-label">Comissï¿½o:</label>
                     <input type="number" step="0.01" min="0" class="form-control" required name="comissaoPorLivroFuncionario" value="${comissaoPorLivroFuncionario}"/>
                 </div>
                 
                 <div class="col-md-6">
-                    <label class="form-label">Endereço:</label>
+                    <label class="form-label">Endereï¿½o:</label>
                     <input type="text" class="form-control" required name="enderecoFuncionario" value="${enderecoFuncionario}"/>
                 </div>
                 <div class="col-md-6">
@@ -70,7 +70,7 @@
                     <c:choose>
                         <c:when test="${opcao == 'confirmarExcluir'}">
                             <button type="submit" formnovalidate class="btn btn-danger">
-                                Confirmar Exclusão
+                                Confirmar Exclusï¿½o
                             </button>
                         </c:when>
                         <c:otherwise>
@@ -92,9 +92,9 @@
                             <th style="width: 8%">ID</th>
                             <th>NOME</th>
                             <th>CPF</th>
-                            <th>SALÁRIO</th>
-                            <th>COMISSÃO</th>
-                            <th>ENDEREÇO</th>
+                            <th>SALï¿½RIO</th>
+                            <th>COMISSï¿½O</th>
+                            <th>ENDEREï¿½O</th>
                             <th>EMAIL</th>
                             <th>TELEFONE</th>
                             <th>CARTEIRA</th>

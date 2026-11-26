@@ -1,23 +1,23 @@
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+ï»¿<%@ taglib prefix="c" uri="jakarta.tags.core" %>
 <%@ page contentType="text/html" pageEncoding="Latin1"%>
 <!DOCTYPE html>
 <html data-bs-theme="dark">
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=Latin1">
-        <title>Cadastro de Usuário</title>
+        <title>Cadastro de Usuï¿½rio</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
         <link href="${pageContext.request.contextPath}/css/bootstrap_config.css" rel="stylesheet">
     </head>
     <body class="d-flex align-items-center justify-content-center vh-100">
         <div class="container" style="max-width: 450px;">
             <div class="card p-4 bg-dark border-secondary shadow-lg">
-                <h1 class="h3 mb-4 text-center">Novo Usuário</h1>
+                <h1 class="h3 mb-4 text-center">Novo Usuï¿½rio</h1>
 
                 <form method="post" action="${pageContext.request.contextPath}/LoginControlador" class="row g-3">
                     <input type="hidden" name="opcao" value="cadastrar">
 
                     <div class="col-12">
-                        <label class="form-label">Nome de Usuário:</label>
+                        <label class="form-label">Nome de Usuï¿½rio:</label>
                         <input type="text" class="form-control" required name="nomeusuario"/>
                     </div>
 

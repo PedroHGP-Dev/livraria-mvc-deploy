@@ -1,4 +1,4 @@
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+ï»¿<%@ taglib prefix="c" uri="jakarta.tags.core" %>
 <%@ page contentType="text/html" pageEncoding="Latin1"%>
 <!DOCTYPE html>
 <html data-bs-theme="dark">
@@ -23,7 +23,7 @@
                     <input type="text" class="form-control" required name="nomeLivraria" value="${nomeLivraria}"/>
                 </div>
                 <div class="col-md-6">
-                    <label class="form-label">Endereço:</label>
+                    <label class="form-label">Endereï¿½o:</label>
                     <input type="text" class="form-control" required name="enderecoLivraria" value="${enderecoLivraria}"/>
                 </div>
 
@@ -47,7 +47,7 @@
                 <div class="col-12">
                     <c:choose>
                         <c:when test="${opcao == 'confirmarExcluir'}">
-                            <button type="submit" formnovalidate class="btn btn-danger">Confirmar Exclusão</button>
+                            <button type="submit" formnovalidate class="btn btn-danger">Confirmar Exclusï¿½o</button>
                         </c:when>
                         <c:otherwise>
                             <button type="submit" class="btn btn-primary">Salvar</button>
@@ -69,7 +69,7 @@
                         <tr>
                             <th style="width: 5%">ID</th>
                             <th>NOME</th>
-                            <th>ENDEREÇO</th>
+                            <th>ENDEREï¿½O</th>
                             <th>CIDADE</th>
                             <th style="width: 6%">UF</th>
                             <th>EMAIL</th>

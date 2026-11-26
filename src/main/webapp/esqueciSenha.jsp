@@ -1,4 +1,4 @@
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+ï»¿<%@ taglib prefix="c" uri="jakarta.tags.core" %>
 <%@ page contentType="text/html" pageEncoding="Latin1"%>
 <!DOCTYPE html>
 <html data-bs-theme="dark">
@@ -35,7 +35,7 @@
                     </div>
 
                     <div class="col-12 mt-4">
-                        <button type="submit" class="btn btn-warning text-dark w-100 font-weight-bold">Gerar Link de Recuperação</button>
+                        <button type="submit" class="btn btn-warning text-dark w-100 font-weight-bold">Gerar Link de Recuperaï¿½ï¿½o</button>
                     </div>
                 </form>
 

@@ -1,4 +1,4 @@
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+ï»¿<%@ taglib prefix="c" uri="jakarta.tags.core" %>
 <%@ page contentType="text/html" pageEncoding="Latin1"%>
 <!DOCTYPE html>
 <html data-bs-theme="dark">
@@ -25,7 +25,7 @@
 
                 <div class="col-12">
                     <button type="submit" class="btn btn-primary" name="Salvar">
-                        ${opcao == 'confirmarExcluir' ? 'Confirmar Exclusão' : 'Salvar'}
+                        ${opcao == 'confirmarExcluir' ? 'Confirmar Exclusï¿½o' : 'Salvar'}
                     </button>
                     <a href="${pageContext.request.contextPath}${URL_BASE}/FormaPagamentoControlador?opcao=cancelar" class="btn btn-secondary">Cancelar</a>
                 </div>
@@ -41,7 +41,7 @@
                 <table class="table table-striped table-hover table-bordered mt-3">
                     <thead class="table-dark">
                         <tr>
-                            <th style="width: 10%;">CÓDIGO</th>
+                            <th style="width: 10%;">Cï¿½DIGO</th>
                             <th>NOME</th>
                             <th style="width: 15%;">ALTERAR</th>
                             <th style="width: 15%;">EXCLUIR</th>
