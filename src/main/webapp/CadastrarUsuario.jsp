@@ -4,20 +4,20 @@
 <html data-bs-theme="dark">
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Cadastro de Usu�rio</title>
+        <title>Cadastro de Usuário</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
         <link href="${pageContext.request.contextPath}/css/bootstrap_config.css" rel="stylesheet">
     </head>
     <body class="d-flex align-items-center justify-content-center vh-100">
         <div class="container" style="max-width: 450px;">
             <div class="card p-4 bg-dark border-secondary shadow-lg">
-                <h1 class="h3 mb-4 text-center">Novo Usu�rio</h1>
+                <h1 class="h3 mb-4 text-center">Novo Usuário</h1>
 
                 <form method="post" action="${pageContext.request.contextPath}/LoginControlador" class="row g-3">
                     <input type="hidden" name="opcao" value="cadastrar">
 
                     <div class="col-12">
-                        <label class="form-label">Nome de Usu�rio:</label>
+                        <label class="form-label">Nome de Usuário:</label>
                         <input type="text" class="form-control" required name="nomeusuario"/>
                     </div>
 

@@ -36,7 +36,7 @@
                     <h1 class="display-4 fw-bold text-primary mb-3">TechLib Solutions</h1>
                     
                     <p class="fs-4 text-secondary mb-4">
-                        Sistema Integrado de Gestão para Livrarias Modernas.
+                        Sistema Integrado de GestÃ£o para Livrarias Modernas.
                     </p>
                     
                     <div class="row text-start mt-5 g-4">
@@ -45,17 +45,17 @@
                             <p class="text-muted">
                                 O TechLib Solutions foi desenvolvido para centralizar o controle operacional 
                                 da sua livraria. Nossa plataforma permite o gerenciamento completo de dados essenciais, 
-                                garantindo que a organização do acervo e as transações financeiras estejam sempre em dia.
+                                garantindo que a organizaÃ§Ã£o do acervo e as transaÃ§Ãµes financeiras estejam sempre em dia.
                             </p>
                         </div>
                         
                         <div class="col-md-6">
                             <h3 class="h4 text-light border-bottom pb-2">Funcionalidades Principais</h3>
                             <ul class="list-unstyled text-muted feature-list">
-                                <li><strong>Cadastros Estruturados:</strong> Gerenciamento de Gêneros, Editoras e Livrarias.</li>
-                                <li><strong>Controle Financeiro:</strong> Configuração de Formas de Pagamento.</li>
-                                <li><strong>Interface Adaptável:</strong> Navegação otimizada para diferentes resoluções.</li>
-                                <li><strong>Integridade de Dados:</strong> Armazenamento seguro de informações críticas.</li>
+                                <li><strong>Cadastros Estruturados:</strong> Gerenciamento de GÃªneros, Editoras e Livrarias.</li>
+                                <li><strong>Controle Financeiro:</strong> ConfiguraÃ§Ã£o de Formas de Pagamento.</li>
+                                <li><strong>Interface AdaptÃ¡vel:</strong> NavegaÃ§Ã£o otimizada para diferentes resoluÃ§Ãµes.</li>
+                                <li><strong>Integridade de Dados:</strong> Armazenamento seguro de informaÃ§Ãµes crÃ­ticas.</li>
                             </ul>
                         </div>
                     </div>
@@ -63,7 +63,7 @@
                     <hr class="my-5 border-secondary opacity-25">
                     
                     <p class="small text-uppercase tracking-widest text-primary fw-semibold">
-                        Navegue através do menu superior para acessar as funcionalidades.
+                        Navegue atravÃ©s do menu superior para acessar as funcionalidades.
                     </p>
                 </div>
             </div>
